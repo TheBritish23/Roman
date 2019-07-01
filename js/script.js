@@ -1,3 +1,6 @@
+var numerals = function(sentence){
+  var 
+
 // user interface logic
 $(document).ready(function() {
   $("form#roman-numerals").submit(function(event) {
