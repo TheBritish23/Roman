@@ -10,7 +10,21 @@ _Spec 1: Letters cannot be translated in numerals_
   _input: A_
   _output: "nothing appears"
 
-_Spec 2:
+_Spec 2: Cannot count higher than 3,999_
+  _input: 4,000_
+  _output: "nothing appears"_
+
+_Spec 3: Size of square should be decided by length of message_
+  _input: "don't compare yourself to others, compare yourself to the person you were yesterday"_
+  _output: "daeer leweo rlref rerne fsyts rdtyt coooe acooo utnyy ouomr hyemr tpseo spsha eput"_
+
+_Spec 4: Cannot count below 0_
+  _input: 0_
+  _output: "nothing appears"
+
+_Spec 5: Recognizes individual signs_
+  _input: l, V, X_
+  _output: 1, 5, 10_
 
 ## Description
 
