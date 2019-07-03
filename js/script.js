@@ -4,7 +4,8 @@ var roman = function(sentence){
   // var splitstring = sentence.split("");
   var newWord;
   for(x=0; x <   )
-   if (splitstring[0]===letter){
+    numerals.forEach(function(letter){
+     if (splitstring[0]===letter){
 
 
 // user interface logic
