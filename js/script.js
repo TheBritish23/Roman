@@ -1,5 +1,5 @@
 var roman = function(sentence){
-  console.log("roman")
+  var romannumber
   var numerals = ["I","V","X","L","C","D","M"]
   var number = ["1","5","10","50","100","500","1000"]
   // var splitstring = sentence.split("");
@@ -7,9 +7,10 @@ var roman = function(sentence){
   for(x=0; x < number.length; x++){
      if (sentence===number[x]){
        console.log(numerals[x]);
+       romannumber=numerals[x]
      }
    }
-    return newWord;
+    return romannumber;
   }
 
 // user interface logic
@@ -21,5 +22,6 @@ $(document).ready(function() {
     var words = $('#words').val()
     var splitstring = roman(words)
     $('#output').append(splitstring)
+    $("#result").text(splitstring);
   })
  });
