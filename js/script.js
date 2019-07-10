@@ -1,10 +1,10 @@
 var roman = function(sentence){
   var romannumber
   var numerals = ["I","V","X","L","C","D","M"]
-  var numerals2 = ["I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
-  var numerals3 = ["X", "XX", "XXX", "XL", "LX", "LXX","LXXX", "XC"]
-  var numerals4 = ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-  var numerals5 = ["M", "MM", "MMM", "MMMM", "MMMMM", "VM", "VMM", "VMMMM", "VMMMMM"]
+  var ones = ["","I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+  var tens = ["","X", "XX", "XXX", "XL", "LX", "LXX","LXXX", "XC"]
+  var hundreds = ["","C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+  var thousands = ["","M", "MM", "MMM"]
   var number = ["1","5","10","50","100","500","1000"]
   // var splitstring = sentence.split("");
   var newWord = sentence.split("");
@@ -13,6 +13,13 @@ var roman = function(sentence){
        console.log(numerals[x]);
        romannumber=numerals[x]
      }
+     if (words.length===4) {
+       roman.push(ones[words[0]])
+       roman.push(tens[words[1]])
+       roman.push(hundreds[words[2]])
+       roman.push(thousands[words[3]])
+     }
+     var roman;
    }
     return romannumber;
   }
