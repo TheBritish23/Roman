@@ -1,5 +1,5 @@
 var roman = function(sentence){
-  var romannumber
+  var romannumber = []
   var numerals = ["I","V","X","L","C","D","M"]
   var ones = ["","I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
   var tens = ["","X", "XX", "XXX", "XL", "LX", "LXX","LXXX", "XC"]
@@ -13,22 +13,20 @@ var roman = function(sentence){
        console.log(numerals[x]);
        romannumber=numerals[x]
      }
-     if (words.length===4) {
-       roman.push(ones[words[0]])
-       roman.push(tens[words[1]])
-       roman.push(hundreds[words[2]])
-       roman.push(thousands[words[3]])
      }
-     var roman;
+     if (newWord.length===4) {
+       romannumber.push(thousands[newWord[0]])
+       romannumber.push(hundreds[newWord[1]])
+       romannumber.push(tens[newWord[2]])
+       romannumber.push(ones[newWord[3]])
+       console.log(romannumber)
    }
     return romannumber;
   }
 
 // user interface logic
 $(document).ready(function() {
-  console.log("roman")
   $("form#roman").submit(function(event) {
-    console.log("roman")
     event.preventDefault();
     var words = $('#words').val()
     var splitstring = roman(words)
