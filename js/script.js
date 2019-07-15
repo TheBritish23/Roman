@@ -33,16 +33,11 @@ var roman = function(sentence){
   //    romannumber.push(ones[newWord[0]])
   //  }
   //   return romannumber;
-   for(x=1; x < number.length; x++){
+  var arr1 = [ones, tens];
+  var arr2 = [hundreds, thousands];
+  var romannumber = arr1.concat(arr2);
 
-   }
-   for (x=2; x < number.length; x++) {
 
-   }
-   for (x=3; x < number.length; x++) {
-
-   }
- };
 // user interface logic
 $(document).ready(function() {
   $("form#roman").submit(function(event) {
