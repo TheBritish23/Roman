@@ -1,10 +1,9 @@
 var roman = function(sentence){
-  var romannumber = []
   var numerals = ["I","V","X","L","C","D","M"]
-  var ones = ["","I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
-  var tens = ["","X", "XX", "XXX", "XL", "LX", "LXX","LXXX", "XC"]
-  var hundreds = ["","C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-  var thousands = ["","M", "MM", "MMM"]
+  var romannumber=[["","I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
+   ["","X", "XX", "XXX", "XL", "LX", "LXX","LXXX", "XC"],
+   ["","C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"],
+   ["","M", "MM", "MMM"]]
   var number = ["1","5","10","50","100","500","1000"]
   // var splitstring = sentence.split("");
   var newWord = sentence.split("");
@@ -33,9 +32,10 @@ var roman = function(sentence){
   //    romannumber.push(ones[newWord[0]])
   //  }
   //   return romannumber;
-  var arr1 = [ones, tens];
-  var arr2 = [hundreds, thousands];
-  var romannumber = arr1.concat(arr2);
+  var romannumber;
+  for (var romannumber = 0; x < roman.length; x++) {
+  }
+}
 
 
 // user interface logic
