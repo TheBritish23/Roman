@@ -1,7 +1,7 @@
 var roman = function(sentence){
   var numerals = ["I","V","X","L","C","D","M"]
   var romannumber=[["","I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
-   ["","X", "XX", "XXX", "XL", "LX", "LXX","LXXX", "XC"],
+   ["","X", "XX", "XXX", "XL", "L", "LX", "LXX","LXXX", "XC"],
    ["","C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"],
    ["","M", "MM", "MMM"]]
   var number = ["1","5","10","50","100","500","1000"]
@@ -33,7 +33,9 @@ var roman = function(sentence){
   //  }
   //   return romannumber;
   var romannumber;
-  for (var romannumber = 0; x < roman.length; x++) {
+  var reverseWord = newWord.reverse()
+  for(var x=0; x < newWord.length; x++) {
+    console.log(romannumber[x][reverseWord[x]])
   }
 }
 
