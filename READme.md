@@ -28,7 +28,7 @@ _Spec 5: Recognizes individual signs_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Similar to my last one, A translator using for() loops, behavior logic, and user interface logic._
 
 ## Setup/Installation Requirements
 
@@ -47,7 +47,7 @@ _email.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_I used the standard fare. However, I had to multiple for() loops._
 
 ### License
 
